@@ -8,6 +8,14 @@ print(f"Los datos son: {datos}")
 media = sum(datos) / len(datos)
 print(f"La media es: {media}")
 
+# Media por funcion
+def calcular_media(numeros):
+    return sum(numeros) / len(numeros)
+
+media = calcular_media(datos)
+print(f"La media por funcion es: {media}")
+
+
 # Mediana
 datos.sort()
 if len(datos) % 2 == 0:
@@ -15,6 +23,7 @@ if len(datos) % 2 == 0:
 else:
     mediana = datos[len(datos)//2 + 1]
 print(f"La mediana es: {mediana}")
+
 
 # Moda
 repeticiones = 0
