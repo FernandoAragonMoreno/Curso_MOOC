@@ -33,5 +33,7 @@ if moda.count(i) == datos.count(i):
     print("No hay una moda. Este conjunto de datos es amodal.")
 elif len(moda) == 1:
     print(f"La moda es: {moda} Este conjunto de datos es unimodal.")
-elif len(moda) > 1:
+elif len(moda) == 2:
+    print(f"La moda es: {moda} Este conjunto de datos es bimodal.")
+elif len(moda) > 2:
     print(f"La moda es: {moda} Este conjunto de datos es multimodal.")
